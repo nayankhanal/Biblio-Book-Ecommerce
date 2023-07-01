@@ -1,4 +1,4 @@
-# Assignment Title: Full Stack Junior Developer - Library Management System
+# Assignment Title: Full Stack Developer - Library Management System
 
 ## Assignment Description:
 
@@ -38,7 +38,7 @@ In this assignment, you will be tasked with developing a Library Management Syst
 
 ## Submission Guidelines:
 
-1. Fork this GitHub repository [Assignment Repo](https://github.com/internsathi/jr-fullstack-assignment) to your own GitHub account.
+1. Fork this GitHub repository [Assignment Repo](https://github.com/internsathi/fullstack-assignment) to your own GitHub account.
 2. Commit your code regularly and push the changes to your forked repository.
 3. Do not create a pull request; just submit your forked repository.
 4. Provide a DOCS.md file with instructions on how to set up and run your application.
