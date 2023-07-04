@@ -34,9 +34,9 @@ In this assignment, you will be tasked with developing a Book Selling E-commerce
 2. Commit your code regularly and push the changes to your forked repository.
 3. Do not create a pull request; just submit your forked repository.
 4. Provide a DOCS.md file with all the technologies used and how to run the program locally.
-5. Once you have completed the assignment, share the repository URL with us via the [submission form](https://docs.google.com/forms/d/e/1FAIpQLSd49m7F_6oSXSI5RFQY_ps2CDQIt3i_iCqrPgzplbqIy8N4EA/viewform).
+5. Once you have completed the assignment, share the repository URL with us via the [submission form]([https://docs.google.com/forms/d/e/1FAIpQLSd49m7F_6oSXSI5RFQY_ps2CDQIt3i_iCqrPgzplbqIy8N4EA/viewform](https://forms.gle/bD7hvsp1K2sxSnsA9)).
 
-- Submission Deadline: Friday July 7, 2023, 11:00 AM
+- Submission Deadline: Friday, July 7, 2023, 4:00 PM 
 
 Note: The assignment is intentionally challenging, and you are not expected to complete all the bonus tasks. Focus on delivering high-quality code and meeting the core requirements first.
 
