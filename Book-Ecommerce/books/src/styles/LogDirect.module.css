@@ -1,0 +1,27 @@
+*{
+    box-sizing: border-box;
+    margin: 1rem 0 0 0;
+    padding: 0;
+}
+
+.button{
+    display: inline;
+    padding: 1.1rem 9.4rem 1.1rem 9.4rem;
+    margin-top: 0.1rem;
+    margin-left: 3rem;
+    background-color:rgb(193 33 243);;
+    color: aliceblue;
+    border-radius: 0.2rem;
+    border: none;
+    cursor: pointer;
+}
+
+.title{
+    display: block;
+    font-size: 3rem;
+    font-weight: 900;
+    padding: 1rem;
+    color: rgb(193 33 243);
+}
+
+

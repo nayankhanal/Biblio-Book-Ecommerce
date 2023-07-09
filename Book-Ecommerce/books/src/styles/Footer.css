@@ -1,0 +1,36 @@
+.footer{
+    background-color: rgb(193 33 243);
+    height: 20rem;
+}
+
+.footer-list{
+    text-align: left;
+    margin-left: 4rem;
+    padding-top: 3rem;
+}
+
+.footer-links{
+    list-style-type: none;
+    padding-top: 0.5rem;
+}
+
+.footer-navlink{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.footer-navlink:hover{
+    text-decoration: underline;
+}
+
+.copyright{
+    color: aliceblue;
+    margin-top: 2rem;
+
+}
+
+.footerlogo{
+    text-align: left;
+    margin-left: 4rem;
+    padding-top: 3rem;
+}

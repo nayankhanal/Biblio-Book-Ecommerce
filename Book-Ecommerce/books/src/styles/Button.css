@@ -1,0 +1,10 @@
+.buy-button{
+    margin-top: 1.7rem;
+    margin-bottom: 1.7rem;
+    padding: 1.2rem 2.2rem;
+    background-color: rgb(193 33 243);
+    color: aliceblue;
+    border: none;
+    border-radius: 2rem;
+    cursor: pointer;
+}

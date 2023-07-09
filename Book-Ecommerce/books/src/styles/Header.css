@@ -1,0 +1,54 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+.navigation{
+    height: 5rem;
+    width: 100%;
+    background-color: rgb(193 33 243);
+    display: flex;
+}
+
+.hometitle{
+    color: aliceblue;
+    margin-right: 2rem;
+    cursor: pointer;
+}
+
+.navitems{
+    margin-left: 2.5rem;
+    padding: 0.3rem 1rem 0.3rem 1rem;
+    color: aliceblue;
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.navline{
+    margin-left: 2rem;
+    margin-top: 1rem;
+}
+
+.navitems:hover{
+    background-color: aliceblue;
+    color: rgb(193 33 243);
+    border-top-left-radius: 0.2rem;
+    border-top-right-radius: 0.2rem;
+}
+
+.right-navline{
+    margin-top: 1.4rem;
+    margin-left: 24rem;
+}
+
+.right-nav{
+    position: relative;
+    margin-left: 4.5rem;
+    background-color: aliceblue;
+    color: rgb(193 33 243);
+    padding: 1rem 0.8rem 0.6rem 0.8rem;
+    border-radius: 20%;
+}

@@ -1,0 +1,18 @@
+
+.tooltiptext{
+    visibility: hidden;
+    width: 4rem;
+    background-color: rgb(58, 56, 56);
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 3.5px 0;
+  
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+}
+
+.right-nav:hover .tooltiptext {
+    visibility: visible;
+  }

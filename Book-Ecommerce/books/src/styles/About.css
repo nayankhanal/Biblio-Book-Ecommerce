@@ -1,0 +1,13 @@
+
+.about-title{
+    color: rgb(193 33 243);
+    margin-top: 3rem;
+    font-size: 3rem;
+}
+
+.about-paragraph{
+    text-align: left;
+   margin: 3rem 8rem 0rem 8rem;
+   color: rgb(61, 60, 60);
+   font-size: 1.2rem;
+}

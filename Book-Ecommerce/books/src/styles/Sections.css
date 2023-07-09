@@ -1,0 +1,29 @@
+.section-second{
+    margin: 8rem 0;
+    width: 100%;
+    height: 30rem;
+    background-color: aliceblue;
+    position: relative;
+}
+
+.section-second-img{
+    width: 80%;
+    border-radius: 3rem;
+}
+
+.section-second-div{
+    display: flex;
+    position: absolute;
+    top: 3rem;
+}
+
+.section-second-div-item{
+    width: 50%;
+}
+
+.section-paragraph{
+    text-align: left;
+   margin: 1.7rem 5rem 0rem 8rem;
+   color: rgb(61, 60, 60);
+   font-size: 1.2rem;
+}
