@@ -33,7 +33,7 @@ button.logButton{
 
 .logins{
     text-align: center;
-    position: relative;
+    position: absolute;
     left: 36%;
 }
 
