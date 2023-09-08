@@ -9,8 +9,11 @@ const mongoose = require("mongoose");
 const bcrypt = require("bcrypt");
 const saltRound = 10;
 const LocalAuth = require("./authentication.js");
-const BookModel = require("./database-books.js");
+const {BookModel} = require("./database-books.js");
 const cors = require('cors');
+const multer = require("multer");
+const upload = multer({ storage: multer.memoryStorage() });
+// const fs = require("fs");
 
 //Use of Middleware
 // app.use(LocalAuth);
@@ -25,6 +28,10 @@ app.use(session({
 app.use(cors());
 app.use(passport.initialize());
 app.use(passport.session());
+
+mongoose.set('strictQuery', true);
+mongoose.connect("mongodb://localhost:27017/usersDB",{useNewUrlParser: true});
+
 
 
 //Home get API
@@ -76,19 +83,56 @@ app.post("/login",
     });
 
 
-app.post("/books", (req, res) => {
-    const { bookTitle, description, image } = req.body.formData;
-    const newBook = new BookModel({
-        bookTitle,
-        description,
-        image
-    });
-    const bookie = { bookTitle, description, image }
+app.post("/books",upload.single("image"), async (req, res) => {
+    const { bookTitle, description } = req.body;
+    const image = req.file;
+
+    const binaryValue = Buffer.from(image.buffer, "hex");
+    // console.log(binaryValue);
+    const base64EncodedData = binaryValue.toString("base64");
+    // console.log(base64EncodedData);
+
+    const bookie = { bookTitle, description, base64EncodedData }
     console.log(bookie);
+
+    // const bImage = fs.readFileSync(image);
+    try {
+        const newBook = new BookModel({
+            bookTitle,
+            description,
+            image: {
+                data: base64EncodedData,
+                contentType: "image/jpeg"
+              }
+        })
+
+        console.log(newBook);
+        await newBook.save();
+        
+    } catch (error) {
+        console.log(error);
+    }
+
+
+
+    // res.redirect("/books");
     // newBook.image.data = imageData;
     // newBook.image.contentType = 'image/jpeg';
 
 })
+
+app.get("/books",async (req,res)=>{
+    // res.send("<h1>Hello from 8000/books</h1>");
+    console.log("ok ok");
+    try {
+        const bookss = await BookModel.find().lean();
+        res.send(bookss);
+        console.log(bookss);
+    } catch (error) {
+        res.send(error);
+    }
+    
+});
 
 
 //Creating a local server

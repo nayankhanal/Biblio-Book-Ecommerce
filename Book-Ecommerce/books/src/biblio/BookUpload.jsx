@@ -32,7 +32,7 @@ function BookUpload(props) {
         formData.append("image", image);
 
         try {
-            axios.post("https://localhost:8000/books", formData, { headers: { 'Content-Type': 'multipart/form-data' } })
+            axios.post("http://localhost:8000/books", formData, { headers: { "Content-Type": "multipart/form-data", } })
                 .then((res) => {
                     console.log(res);
                 }).catch((err) => {

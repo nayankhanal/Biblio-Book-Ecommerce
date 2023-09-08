@@ -10,6 +10,7 @@ import About from "./biblio/About";
 import Contact from "./biblio/Contact";
 import Cart from "./biblio/Cart";
 import BookUpload from "./biblio/BookUpload"
+import Books from "./biblio/Books";
 
 function App() {
 
@@ -39,10 +40,17 @@ function App() {
         <Route exact path="/" element={<LogDirect />} />
         <Route exact path="/login" element={<Log checkLogin={checkLogin} forceHome={forceHome} />} />
         <Route exact path="/signup" element={<Sign />} />
-        <Route exact path="/home" element={thisUser && thisUser._id ? <Home /> : <Navigate to="/login" />} />
+        {/* <Route exact path="/home" element={thisUser && thisUser._id ? <Home /> : <Navigate to="/login" />} />
+        <Route exact path="/about" element={thisUser && thisUser._id ? <About /> : <Navigate to="/login" />} />
+        <Route exact path="/contact" element={thisUser && thisUser._id ? <Contact /> : <Navigate to="/login" />} />
+        <Route exact path="/cart" element={thisUser && thisUser._id ? <Cart /> : <Navigate to="/login" />} /> */}
+
+        <Route exact path="/home" element={<Home />} />
         <Route exact path="/about" element={<About />} />
         <Route exact path="/contact" element={<Contact />} />
         <Route exact path="/cart" element={<Cart />} />
+        <Route exact path="/books" element={<Books />} />
+
         <Route exact path="/bookupload" element={<BookUpload />} />
       </Routes>
 

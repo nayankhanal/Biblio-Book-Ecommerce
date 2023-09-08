@@ -3,7 +3,7 @@ const passport = require("passport");
 const passportLocalMongoose = require("passport-local-mongoose");
 const findOrCreate = require("find-or-create-mongoose");
 
-mongoose.connect("mongodb://localhost:27017/userDB",{useNewUrlParser: true});
+// mongoose.connect("mongodb://localhost:27017/userDB",{useNewUrlParser: true});
 
 const userSchema = new mongoose.Schema({
     firstName: {type: String, required: true},
